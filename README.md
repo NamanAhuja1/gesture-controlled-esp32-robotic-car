@@ -47,6 +47,34 @@ Robot Car
 | Three Fingers | Right |
 | Thumb Down | Backward |
 
+## Hardware Setup
+
+### Top View
+
+![Top View](images/Car_Top_View.jpeg)
+
+### Side View
+
+![Side View](images/Car_Side_view.jpeg)
+
+## Project Architecture
+
+```text
+Webcam
+   ↓
+OpenCV + MediaPipe
+   ↓
+Gesture Recognition
+   ↓
+Serial Communication
+   ↓
+ESP32
+   ↓
+L298N Motor Driver
+   ↓
+Robot Car
+```
+
 ## Installation
 
 pip install -r requirements.txt
